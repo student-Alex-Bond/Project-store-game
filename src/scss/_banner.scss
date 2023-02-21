@@ -1,7 +1,22 @@
 .banner {
     &-img {
+        display: grid;
+        grid-template-columns: repeat(16, 1fr);
+        grid-template-rows: repeat(24, 1fr);
         background-color: $color-blue-dark;
         grid-column: full-start / col-end 4;
+        background: url('../img/background.png') center / cover no-repeat;
+        &__img-1 {
+            grid-column: 3 / 15;
+            grid-row: 3 / 12;
+            width: 100%;
+        }
+        &__img-2 {
+            grid-column: 5 / -1;
+            grid-row: 10 / 23;
+            transform: translateX(3.5rem);
+            width: 100%;
+        }
     }
     &-text {
         background-color: $color-blue-dark;
