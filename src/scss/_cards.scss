@@ -1,4 +1,54 @@
 .cards {
     background-color: $color-gray-light;
+    padding: 15rem 0;
     grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 4rem 6rem;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: $color-blue-dark;
+    grid-row-gap: 4.5rem;
+    &__img {
+        grid-row: 1 / 2;
+        width: 100%;
+        grid-column: 1 /-1;
+    }
+    &__btn {
+        grid-column: 1 /-1;
+    }
+    &__svg {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1rem;
+    }
+    &__title {
+        padding: 1.5rem 11.5rem;
+        background-color: $color-green-dark;
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-align: center;
+        color: $color-gray-light;
+        width: 80%;
+        transform: translateY(50%);
+        z-index: 2px;
+        grid-row: 1 / 2;
+        justify-self: center;
+        align-self: end;
+        grid-column: 1 / -1;
+    }
+}
+
+.content {
+    margin-left: 2.5rem;
+    display: flex;
+}
+
+.content p {
+    font-size: 1.6rem;
+    color: $color-gray-light;
+    font-weight: 300;
 }
