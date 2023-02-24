@@ -1,5 +1,31 @@
 .sidebar {
+    padding-top: 3.7rem;
+    display: flex;
+    justify-content: center;
     background-color: $color-green-dark;
     grid-column: sidebar-start / sidebar-end;
     grid-row: 1 / -1;
+}
+
+.hamburger {
+    height: .2rem;
+    width: 4.5rem;
+    border: none;
+    background-color: $color-gray-light;
+    &::after {
+        content: '';
+        background-color: $color-gray-light;
+        height: .2rem;
+        width: 4.5rem;
+        display: block;
+        transform: translateY(-1.5rem);
+    }
+    &::before {
+        content: '';
+        background-color: $color-gray-light;
+        height: .2rem;
+        width: 4.5rem;
+        display: block;
+        transform: translateY(1.5rem);
+    }
 }
