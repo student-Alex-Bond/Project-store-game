@@ -1,4 +1,25 @@
 .gamers {
     background-color: $color-blue-dark;
     grid-column: col-end 6 / full-end;
+    display: grid;
+    grid-template-columns: min-content max-content;
+    grid-gap: 4rem 2rem;
+    align-content: center;
+    justify-content: center;
+    &__title {
+        grid-column: 1 /-1;
+        justify-self: center;
+    }
+    &__img {
+        width: 7rem;
+        height: 7rem;
+    }
+    &__text {
+        align-self: center;
+    }
+    &__score {
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: $color-gray-dark;
+    }
 }
