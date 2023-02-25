@@ -1,10 +1,17 @@
 .sidebar {
-    padding-top: 3.7rem;
+    padding-top: 3rem;
     display: flex;
     justify-content: center;
     background-color: $color-green-dark;
     grid-column: sidebar-start / sidebar-end;
     grid-row: 1 / -1;
+    @include respond(tab-land) {
+        padding: 0 4rem 0 0;
+        justify-content: end;
+        align-items: center;
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+    }
 }
 
 .hamburger {

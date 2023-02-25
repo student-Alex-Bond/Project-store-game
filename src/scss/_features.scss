@@ -6,6 +6,9 @@
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     grid-gap: 3rem 4rem;
     align-items: start;
+    @include respond(phone) {
+        padding: 5rem;
+    }
 }
 
 .feature {
@@ -18,7 +21,7 @@
         grid-row: 1 / span 2;
         transform: translateY(-1rem);
     }
-    &__ext {
+    &__text {
         font-size: 1.6rem;
         font-weight: 400;
         line-height: 113%;
